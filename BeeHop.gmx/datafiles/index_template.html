@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!-- More at https://KEBOMB.eu -->
+
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="pragma" content="no-cache"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name ="viewport" content="width=device-width, user-scalable=no, minimal-ui" id="viewport"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta charset="utf-8"/>
+
+  <!-- Chrome for Android Colour -->
+  <meta name="theme-color" content="#fff26b">
+
+  <!-- Set the title bar of the page -->
+  <title>Bee Hop</title>
+
+  <style>
+    html,
+    body {
+      background: #242424;
+      color: #cccccc;
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      height: 100%;
+    }
+    canvas {
+      image-rendering: optimizeSpeed;
+      -webkit-interpolation-mode: nearest-neighbor;
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+    }
+    div.loading_image_class {
+      position: absolute;
+      top: 35%; 				/* Center */
+      left: 50%; 				/* Center */
+      width: 236px;			    /* Width of image */
+      height: 82px;			    /* Height of image */
+      margin-left: -118px;		/* Half of width */
+      margin-top: -41px;		/* Half of height */
+      display: none;			/* Invisible */
+    }
+    :-webkit-full-screen #canvas {
+      width: 100%;
+      height: 100%;
+    }
+    div.gm4html5_div_class {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+    }
+    div.gm4html5_login {
+      padding: 20px;
+      position: absolute;
+      border: solid 2px #000000;
+      background-color: #404040;
+      color:#00ff00;
+      border-radius: 15px;
+      box-shadow: #101010 20px 20px 40px;
+    }
+    div.gm4html5_cancel_button {
+      float: right;
+    }
+    div.gm4html5_login_button {
+      float: left;
+    }
+    div.gm4html5_login_header {
+      text-align: center;
+    }
+    :-webkit-full-screen {
+      width: 100%;
+      height: 100%;
+    }
+
+    #adWrapper {
+        position: absolute;
+        top: 100px;
+        display: none;
+        z-index: 100%;
+    }
+    
+    #banner{
+        display: none;
+    }
+    
+    #banner-break{
+        display: none;
+    }
+  </style>
+</head>
+<body style="overflow: hidden">
+  <div class="gm4html5_div_class" id="gm4html5_div_id">
+    <canvas id="canvas" width="1280" height="1920">
+      <p>Your browser doesn't support HTML5 canvas.</p>
+    </canvas>
+	
+	
+	<div id="adWrapper">
+	  <div id="banner"> 
+		<!-- <script type="text/javascript" src="http://ad.leadbolt.net/show_app_ad.js?section_id=747650846"></script> -->
+	  </div>
+	  
+	  <div id="banner-break"> 
+		<!-- <script type="text/javascript" src="http://ad.leadbolt.net/show_app_ad.js?section_id=382435201"></script> -->
+	  </div>
+	</div>
+	
+    <!-- Display the loading bar image -->
+    <div class="loading_image_class" id="loading_image_div">
+      <img src='html5contents/loading_image.png'>
+    </div>
+  </div>
+
+  <!-- Run the game code -->
+  <script type="text/javascript" src="html5contents/BeeHop.js?YKFYB=1788607147"></script>
+  <script>
+		function game_init() {
+			GameMaker_Init();
+			
+			var viewPortScale = 1.0 / window.devicePixelRatio;
+			document.getElementById('viewport').setAttribute('content', 'user-scalable=no, initial-scale=' + viewPortScale + ', width=device-width, minimal-ui');
+		}
+		
+		window.onload = game_init;
+  </script>
+</body>
+</html>
