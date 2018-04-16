@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_score = 0;
+            <string>//enable double click
+mouse_doubleclick_init();
+
+game_score = 0;
 game_state = game.ready;
 game_score_reached = false;
 

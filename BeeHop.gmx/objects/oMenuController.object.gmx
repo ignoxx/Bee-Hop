@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = room_width/2;
+            <string>
+
+x = room_width/2;
 y = -100;
 
 title_text = "Bee Hop";
@@ -140,6 +142,8 @@ draw_sprite(sprGameName, 0, x, y);
 draw_set_font(fnt_jchtml5_2); draw_set_halign(fa_left); draw_set_valign(fa_middle);
 draw_sprite_ext(sprTrophy, 1, room_width/2 - 40, room_height/2, 1, 1, 0, c_white, 1);
 jc_draw_text(room_width/2 + string_width(global._game_high_score)/2 + 5 - 40, room_height/2, global._game_high_score, 1, 0);
+
+if(mouse_check_doubleclick(mb_left, 250000)) show_message("PENIS");
 </string>
           </argument>
         </arguments>

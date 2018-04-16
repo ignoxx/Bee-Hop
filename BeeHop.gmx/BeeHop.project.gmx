@@ -80,6 +80,7 @@
     <extension index="3">extensions\Draw Text Outlined</extension>
     <extension index="4">extensions\GameAnalyticsExt</extension>
     <extension index="5">extensions\KongAPI</extension>
+    <extension index="6">extensions\mouse_check_doubleclick</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_background</sound>

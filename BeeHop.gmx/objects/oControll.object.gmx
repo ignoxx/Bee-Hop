@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//_display_reset(true);
+            <string>//enable double click
+mouse_doubleclick_init();
+
+//_display_reset(true);
 
 /*
 if( kongGetAPI() != -1){
